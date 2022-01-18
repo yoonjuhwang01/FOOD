@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* Custom Properties */
+:root{
+    --leading: 2em;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -7,6 +12,7 @@ body{
 
 .hero-bg{
     background: #307D99 url('../images/bg.jpeg');
+    background-position: 12% 83%;
     color: white;
     text-align: center;
     padding-bottom: 4em;
@@ -51,3 +57,92 @@ h1 span::before {
     margin-left: -.3em;
 }
 
+.hero-bg p{
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.form-container{
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+
+}
+
+label {
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+input[type=text]{
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    box-sizing: border-box;
+}
+
+.form-container p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+}
+
+input[type=button]{
+    background-color: #F89104;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    background-color: #d87e00;    
+}
+
+.authentic {
+    margin: 0;
+}
+
+.right-col{
+    text-align: center;
+    margin: 3em 1em;
+}
+
+h2{
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::before {
+    content: ' ';
+    position: absolute;
+    width: 8em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    line-height: var(--leading);
+}
+
+@media (min-width: 730px){
+    
+}
